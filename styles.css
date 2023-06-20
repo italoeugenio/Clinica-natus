@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 0;
+  background: #686468;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+  height: calc(100vh - 150px);
+  background: no-repeat center/cover url('imagens/Header-image.jpg')
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 30px;
+}
+
+header nav p {
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+.header-content {
+  max-width: 400px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.header-content h1 {
+  margin-bottom: 10px;
+  font-size: 3.7rem;
+
+}
+
+.tratamentos {
+  background: #e5e5e5;
+  padding: 15px;
+}
+
+.tratamentos-cards .card {
+  transition: transform 0.3s ease;
+}
+
+.tratamentos-cards .card:hover {
+  transform: scale(1.1);
+}
+
+.tratamentos .tratamentos-cards {
+  display: flex;
+  margin: auto;
+  max-width: 950px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.tratamentos .tratamentos-title {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.tratamentos .card {
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 24px 0px;
+  margin: 25px;
+  position: relative;
+
+}
+
+.tratamentos .card-image {
+  width: 250px;
+  height: 200px;
+  border-radius: 24px 0 0 0;
+  object-fit: cover;
+
+}
+
+.tratamentos .card-content {
+  padding: 0 15px;
+}
+
+.tratamentos .card-content ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.tratamentos .card-content ul li {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+  color: #686468;
+  font-weight: bold;
+}
+
+.tratamentos .card-content li svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.tratamentos .card-content h1 {
+  font-size: 1rem;
+}
+
+.tratamentos .card .card-tag-top {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+}
+
+.tratamentos .card .card-tag-bottom {
+  position: absolute;
+  left: 0;
+  top: 160px;
+  border-radius: 0px 8px 8px 0px;
+  padding: 5px 10px;
+}
+
+.tratamentos .card .card-tag p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+}
+
+.sobre {
+  padding: 15px;
+}
+
+.sobre .sobre-title {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.sobre .sobre-cards {
+  padding-top: 25px;
+  display: flex;
+  max-width: 950px;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.sobre .card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.sobre .card svg {
+  width: 60px;
+  height: 60px;
+  margin: 50px;
+  transition: all 1s;
+}
+
+.sobre .card svg:hover {
+  stroke: #1CA301;
+  transform: scale(1.1);
+}
+
+.sobre .card h3 {
+  font-weight: bold;
+
+}
+
+.sobre .card p {
+  color: #686468;
+  font-size: .8rem;
+  text-align: center;
+
+}
+
+.sobre .card .card-content {
+  height: 180px;
+  text-align: center;
+}
+
+.sobre button {
+  background-color: #1CA301;
+}
+
+.map-position {
+  text-align: right;
+  font-size: 18px;
+  margin-bottom: 30px;
+  height: 250px;
+  width: 100%;
+}
+
+.contato {
+  padding: 60px 20%;
+  background-color: #e5e5e5;
+  position: relative;
+}
+
+.contato .contato-card {
+  width: 350px;
+  height: 300px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 99;
+
+  border-radius: 8px;
+
+  top: calc(50% - 150px);
+  left: calc(20% - 175px);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card h1 {
+  padding-left: 50px;
+  text-align: left;
+}
+
+.contato .contato-card li {
+  font-size: .8rem;
+  font: bold;
+  color: grey;
+
+  display: flex;
+  align-items: center;
+}
+
+.contato .contato-card svg {
+  width: 16px;
+  margin: 10px;
+}
+
+/*RESPOSIVIDADE*/
+
+/* MAPA */
+@media (max-width: 950px) {
+  .contato {
+    padding: 60px 0;
+  }
+
+  .contato .contato-card {
+    left: 40px;
+  }
+
+  .map-position {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 100%;
+
+  }
+
+}
+
+/* MAPA */
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button-pulsate {
+  animation: none;
+}
+
+.button-pulsate:hover {
+  animation-name: pulsate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+
+@media (max-width: 800px) {
+  .map-position {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 100%;
+  }
+
+  .contato {
+    padding: 20px 0;
+  }
+
+  .contato .contato-card {
+    position: static;
+    margin: 40px auto;
+  }
+
+}
+
+/* Página 2 */
+.tratamento-item {
+  display: flex;
+  align-items: center;
+  max-width: 950px;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.pag2-imagem {
+  width: 250px;
+  height: 200px;
+  margin: 25px;
+  border-radius: 24px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  /* Adiciona a transição */
+}
+
+.pag2-imagem:hover {
+  transform: scale(1.1);
+  /* Aplica o efeito de escala ao passar o mouse */
+}
+
+.pag2-texto {
+  flex: 1;
+  padding: 25px;
+}
+
+.centralizado {
+  text-align: center;
+}
+
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .tratamento-item {
+    flex-direction: column;
+  }
+
+  .pag2-imagem {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    order: 1;
+  }
+
+  .pag2-texto {
+    width: 100%;
+    padding: 25px;
+    order: 2;
+  }
+}
+
+
+
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  body {
+    margin-bottom: 55px;
+  }
+
+  header nav ul {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    z-index: 99;
+
+    background: #1CA301;
+    color: white;
+    font-weight: bold;
+    height: 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contato {
+    padding: 20px 0;
+  }
+
+  .contato .contato-card {
+    position: static;
+    margin: 40px auto;
+  }
+
+  .map-position {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 100%;
+  }
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .map-position {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 100%;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {}
