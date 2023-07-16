@@ -372,6 +372,7 @@ header nav ul li {
 }
 
 .pag2-texto {
+  text-align: justify;
   flex: 1;
   padding: 25px;
 }
